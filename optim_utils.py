@@ -162,9 +162,10 @@ def plot_convergence(f, ax, all_x_k, all_f_k, all_x, x_min, x_max,
     ax.plot(all_x[:, 0], all_x[:, 1], 'k.', markersize=4)
 
     ax.plot([0], [0], 'rx', markersize=12)
+    ax.plot([all_x_k[-1, 0]], [all_x_k[-1, 1]], 'gx', markersize=12)
 
-    ax.set_xticks(())
-    ax.set_yticks(())
+    #ax.set_xticks()
+    #ax.set_yticks()
     ax.set_xlim(x_min, x_max)
     ax.set_ylim(y_min, y_max)
     plt.draw()
